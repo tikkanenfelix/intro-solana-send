@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { AppBar } from '../components/AppBar'
 import { SendSolForm } from '../components/SendSolForm'
 import Head from 'next/head'
+import { DisplayBalance } from '../components/DisplayBalance'
 
 const Home: NextPage = (props) => {
 
@@ -17,7 +18,7 @@ const Home: NextPage = (props) => {
       </Head>
       <AppBar />
       <div className={styles.AppBody}>
-        <p>Display Balance Here</p>
+        <DisplayBalance />
         <SendSolForm />
       </div>
     </div>
